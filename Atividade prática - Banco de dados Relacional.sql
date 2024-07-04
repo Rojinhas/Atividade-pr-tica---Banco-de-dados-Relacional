@@ -17,9 +17,16 @@ VALUES ("Zoro", "TI", "roronoaZoro@123", 3745.00, "CLT");
 INSERT INTO tb_colaboradores(nome, cargo, email, salario, tipo_contratacao)
 VALUES ("Luffy", "CEO", "mugiwaraD.L@123", 6000.00, "PJ");
 INSERT INTO tb_colaboradores(nome, cargo, email, salario, tipo_contratacao)
-VALUES ("Nami", "RH", "nami@123", 1000.00, "CLT");
+VALUES ("Nami", "RH", "nami@123", 10000.00, "CLT");
 INSERT INTO tb_colaboradores(nome, cargo, email, salario, tipo_contratacao)
 VALUES ("Toni", "Médico", "tontoni@1234", 1000, "CLT");
 INSERT INTO tb_colaboradores(nome, cargo, email, salario, tipo_contratacao)
 VALUES ("Sanjin","Cozinheiro", "rei_delas@123", 2000, "PJ" );
+
+SELECT * FROM tb_colaboradores WHERE Salario > 2000;
+SELECT * FROM tb_colaboradores WHERE Salario < 2000; 
+
+UPDATE tb_colaboradores SET salario =10000.00 WHERE id = 2; 
+
+
 
